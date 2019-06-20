@@ -5,11 +5,11 @@
 <script src="https://taisukef.github.io/egclockjs/egclockjs.js"></script>
 <script>"use strict"
 const clockmain = function(g, year, mon, day, h, m, s, ms) {
-	g.setColor(0, 0, 0)
+	g.setColor(0, 206, 209)
 	g.fillRect(0, 0, 1000, 1000)
 
-	var delay = 0.003
-	var startdeg = m / 60 * 360
+	var delay = 0.1
+	var startdeg = m / 1 * 360
 	var enddeg = 360 * 2 + (h / 12 * 360)
 	var ndeg = enddeg - startdeg
 	var ntama = Math.floor(ndeg / 10)
